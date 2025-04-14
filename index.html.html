@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Ambition Advisor is a trusted recruitment consultancy specializing in Sales, Insurance, Finance, Tech, Telecom, BPO and entry-level hiring across India.">
+<meta name="keywords" content="Recruitment Consultancy, BPO Hiring, Sales Hiring, Ambition Advisor, Staffing Agency India">
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ambition Advisor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+.topbar {
+  background: #d32f2f;
+  color: #fff;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.topbar-left,
+.topbar-right {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop and tablet view */
+@media (min-width: 768px) {
+  .topbar-left {
+    text-align: left;
+  }
+
+  .topbar-right {
+    text-align: right;
+  }
+
+  .topbar-left,
+  .topbar-right {
+    flex: 1;
+  }
+}
+
+/* Mobile view override */
+@media (max-width: 767px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .topbar a {
+    display: inline-block;
+    margin: 4px 0;
+  }
+}
+
+
+header {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  height: auto;
+  max-height: 120px;
+  width: auto;
+  max-width: 200px;
+}
+
+
+    section {
+      padding: 50px 30px;
+      background: #fff;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #c62828; /* updated softer red */
+    }
+.about-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+  max-width: 100%;
+}
+
+.about p strong {
+  color: #c62828;
+  font-weight: 600;
+}
+
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background: #f9eaea;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .clients {
+      background: #f9f9f9;
+    }
+.hero-banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.mission-vision {
+  background: #fff;
+  padding: 50px 30px;
+}
+
+.mission-vision-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mv-box {
+  background: #f9eaea;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.mv-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.mv-box h3 {
+  color: #c62828;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.mv-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .client-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .client-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    .client-box {
+      background: #fff;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .client-box:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+.client-box img {
+  max-width: 150px;
+  max-height: 120px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+
+    .client-box p {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+    }
+
+   footer {
+  width: 100%;
+  background: #c62828;
+  color: #fff;
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  footer > div:nth-child(2) {
+    text-align: right;
+  }
+}
+
+footer > div {
+  padding: 0 10px;
+}
+
+
+
+    footer h4 {
+      margin-bottom: 15px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .copyright {
+      background: #a91d1d;
+      text-align: center;
+      color: #eee;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .client-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="topbar">
+  <div class="topbar-left">📧 <a href="mailto:hr.support@ambitionadvisor.in">hr.support@ambitionadvisor.in</a></div>
+  <div class="topbar-right">📞 <a href="tel:+919310491386">+91 93104 91386</a>, <a href="tel:+919310058098">+91 93100 58098</a></div>
+</div>
+
+
+
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Ambition Advisor Logo">
+  </div>
+</header>
+
+<div class="hero-banner">
+  <img src="BannerPhoto1.PNG" alt="Ambition Advisor Banner">
+
+</div>
+
+
+  <section class="about">
+  <div class="about-container">
+    <h2 class="section-title">About Us</h2>
+    <p>
+      <strong>Ambition Advisor</strong> was founded in 2024 by <strong>Akanksha Bhandari</strong> and <strong>Ajay Jha</strong> with the vision of bridging the gap between talented individuals and leading organizations. With over a decade of combined experience in recruitment and consulting, they identified the need for a more personalized, effective approach to talent acquisition.
+    </p>
+    <p>
+      Specializing in recruitment consultancy, Ambition Advisor connects businesses with high-quality candidates in the <strong>Sales, Insurance, Finance, Tech, Telecom</strong> and <strong>BPO</strong> sectors. We go beyond just hiring—we build meaningful partnerships that support growth for both companies and professionals.
+    </p>
+    <p>
+      Over the years, we’ve served clients ranging from startups to global brands. Our commitment to integrity, precision hiring, and people-first values has earned us a reputation as a trusted recruitment partner across India.
+    </p>
+  </div>
+</section>
+
+
+<section class="mission-vision">
+  <h2 class="section-title">Our Mission & Vision</h2>
+  <div class="mission-vision-wrapper">
+    <div class="mv-box">
+      <h3>Our Mission</h3>
+      <p>
+        To provide tailored recruitment solutions that help organizations streamline their hiring processes, attract top-tier candidates, and meet staffing objectives effectively. We focus on delivering high-quality talent that aligns with our clients’ business needs across the BPO, E-commerce, Telecom, Insurance, and Banking sectors.
+      </p>
+    </div>
+    <div class="mv-box">
+      <h3>Our Vision</h3>
+      <p>
+        To be India’s most reliable recruitment partner, recognized for our deep industry expertise, strong candidate network, and our ability to deliver end-to-end talent acquisition solutions that drive sustainable growth for our clients.
+      </p>
+    </div>
+  </div>
+</section>
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-box"><h3>Talent Acquisition for BPO & Sales</h3><p>We specialize in hiring for voice, non-voice, telesales, and customer service roles. Our recruitment process ensures candidates are job-ready, communicative, and aligned with your company’s performance goals.</p></div>
+      <div class="service-box"><h3>Bulk & Volume Hiring Solutions</h3><p>Need to hire in numbers? Our volume hiring services are tailored for growing businesses, handling everything from mass sourcing and screening to coordination and onboarding across multiple locations..</p></div>
+      <div class="service-box"><h3>Contract & Project-Based Staffing</h3><p>Perfect for urgent or seasonal staffing needs, we provide vetted professionals on short-term or project-based contracts — without compromising on skill, efficiency, or reliability.
+
+.</p></div>
+      <div class="service-box"><h3>Campus & Entry-Level Hiring</h3><p>We collaborate with colleges and training institutes to help you recruit enthusiastic, trainable talent for junior-level roles. Ideal for companies building long-term internal pipelines.
+
+.</p></div>
+    </div>
+  </section>
+
+ <section class="clients">
+  <h2 class="section-title">Our Clients</h2>
+  <div class="client-grid">
+    <div class="client-box">
+      <img src="british airways client.png" alt="British Airways">
+
+      <p>British Airways</p>
+    </div>
+    <div class="client-box">
+      <img src="FIS client.png" alt="FIS">
+      <p>FIS</p>
+    </div>
+    <div class="client-box">
+      <img src="Teleperformance.png" alt="Teleperformance">
+      <p>Teleperformance</p>
+    </div>
+    <div class="client-box">
+      <img src="IGT Client.png" alt="IGT">
+      <p>IGT</p>
+    </div>
+    <div class="client-box">
+      <img src="Baazi Games Client.png" alt="Baazi Games">
+      <p>Baazi Games</p>
+    </div>
+    <div class="client-box">
+      <img src="Dream 11 Client.png" alt="Dream 11">
+      <p>Dream 11</p>
+    </div>
+    <div class="client-box">
+      <img src="Eternal Client.png" alt="Eternal">
+      <p>Zomato</p>
+    </div>
+    <div class="client-box">
+      <img src="Accenture Client.png" alt="Accenture">
+      <p>Accenture</p>
+    </div>
+    <div class="client-box">
+      <img src="HDFC Bank Client.png" alt="HDFC Bank">
+      <p>HDFC</p>
+    </div>
+    <div class="client-box">
+      <img src="Sutherland Global Client.png" alt="Sutherland Global">
+      <p>Sutherland Global</p>
+    </div>
+    <div class="client-box">
+      <img src="Radius Client.png" alt="Radius">
+      <p>Radius</p>
+    </div>
+    <div class="client-box">
+      <img src="Lenskart Client.png" alt="LensKart">
+      <p>LensKart</p>
+    </div>
+    <div class="client-box">
+      <img src="EXL Client.png" alt="EXL">
+      <p>EXL</p>
+    </div>
+    <div class="client-box">
+      <img src="Transcom Client.png" alt="Transcom">
+      <p>Transcom</p>
+    </div>
+    <div class="client-box">
+      <img src="Barclays Client.png" alt="Barclays">
+      <p>Barclays</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div>
+      <h4>About Us</h4>
+      <p>Ambition Advisor was founded in 2024 by Akanksha Bhandari and Ajay Jha with the vision of bridging the gap between talented individuals and leading organizations. With over a decade of combined experience in recruitment and consulting, they identified the need for a more personalized, effective approach to talent acquisition.</p>
+
+<p>Specializing in recruitment consultancy, Ambition Advisor connects businesses with high-quality candidates in the Sales, Insurance, Finance, Tech, Telecom and BPO sectors. We go beyond just hiring—we build meaningful partnerships that support growth for both companies and professionals.</pP
+
+<p>Over the years, we’ve served clients ranging from startups to global brands. Our commitment to integrity, precision hiring, and people-first values has earned us a reputation as a trusted recruitment partner across India.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><strong>Ambition Advisor</strong></p>
+      <p>E2 / P-80 Subhash Nagar New Delhi 110018</p>
+      <p>Email: hr.support@ambitionadvisor.in</p>
+      <p>Phone: +91-93100 58098, +91-87997 02512</p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    Copyright © 2025 Ambition Advisor. All rights reserved.
+  </div>
+
+</body>
+</html>
